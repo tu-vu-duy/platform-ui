@@ -1,0 +1,122 @@
+.uiWikiPageEditForm{
+	.actionContainer{
+		height: 38px;
+		.uiSubmitToolBar{
+			margin:10px 0px 0px 14px;
+			float: right;
+		}
+		.uiCheckbox{
+			margin-top: 12px;
+		}
+	}
+	.uiEditUpper input{
+		height: 33px;
+		width: 100%;
+		box-sizing:border-box;
+		-moz-box-sizing:border-box; /* Firefox */
+		-webkit-box-sizing:border-box; /* Safari */
+		margin-bottom: 4px;
+		color: @grayDark;
+		font-size: 18px;
+	}
+	.uiWikiSidePanelArea{
+		.border-radius (5px 5px 0 0);
+		float: right;
+		line-height: 16px;
+		margin: 0 0 10px;
+		padding: 0;
+		width: 270px;
+		.barTit{
+			background: @grayWhiteSmoke;
+			border: 1px solid #C7C7C7;
+			.border-radius( 5px 5px 0 0);
+			color: @gray;
+			font-weight: bold;
+			line-height: 33px;
+			padding-left: 15px;
+			.uiIconClose{
+				margin: 8px 6px 0 0;
+    			text-decoration: none;
+			}
+		}
+		.content{
+			background: @white;
+			border: 1px solid #dedede;
+			border-top: none;
+			padding: 12px 8px;
+			.border-radius( 0 0 5px 5px);
+			.box-shadow(0px 1px 3px rgba(0,0,0,0.06));
+			p{
+				margin-bottom: 0px;
+			}
+		}
+	}
+	.uiColsLeftsEditForm{
+		margin-bottom: 22px;
+		margin-right: 290px;
+		padding: 0;
+	}
+	.uiWikiPageContentInputContainer{
+		.commentInput{
+			margin-bottom:24px;
+		}
+		textarea{
+			background: @white;
+			border: 1px solid #dedede;
+			.border-radius(@borderRadiusLarge);
+			font-size: 10pt;
+			height: 357px;
+			overflow: auto;
+			padding: 6px;
+			width: 100%;
+			box-sizing:border-box;
+			-moz-box-sizing:border-box; /* Firefox */
+			-webkit-box-sizing:border-box; /* Safari */
+			box-shadow: 0 2px 1px rgba(0, 0, 0, 0.075) inset, 0px 1px 3px rgba(0,0,0,0.06);
+		}
+		
+		 textarea:focus{
+		 	border-color: #94B0DF;
+			box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 5px rgba(29, 75, 159, 0.6);
+		}
+		  
+	}
+	.uiWikiPageContainer{
+		.form-horizontal {
+			.control-group{
+				margin:16px 0;
+				.control-label{
+					width: 72px;
+				}
+				.controls{
+					margin: 0px 16px 0px 10px;
+				}
+				.controls input{
+					width: 579px;
+				}
+			}
+			.uiCheckbox{
+				margin-top: 5px;
+			}
+		}
+	}
+	.CommentInput{
+		.CommentTitle{
+			color: #636363;
+			display: block;
+			line-height: 15px;
+			margin-top: 5px;
+			width: 60px;
+		}
+		input{
+			background: @white;
+			border: 1px solid #DCDCDC;
+			.border-radius(@borderRadiusLarge);
+			font-size: 14px;
+			padding: 6px;
+			width: 50%;
+			float: left;
+		}
+	}
+}
+

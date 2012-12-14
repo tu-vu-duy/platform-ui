@@ -47,6 +47,7 @@
 
    <modules>
       <module>webui/core</module>
+      <module>web/skin</module>
       <module>web/eXoResources</module>
    </modules>
 

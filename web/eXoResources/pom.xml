@@ -18,9 +18,41 @@
    <packaging>war</packaging>
    <name>Platform UI Web Resources</name>
 
+	<dependencies>
+		<dependency>
+			<groupId>org.exoplatform.platform-ui</groupId>
+			<artifactId>platform-ui-web-skin</artifactId>
+            <version>${project.version}</version>
+		</dependency>
+	</dependencies>
+   
    <build>
       <finalName>eXoResources</finalName>
       <plugins>
+	      <plugin>
+	         <groupId>org.apache.maven.plugins</groupId>
+	         <artifactId>maven-dependency-plugin</artifactId>
+	         <executions>         
+	            <execution>
+	               <id>unpack</id>
+	               <goals>
+	                  <goal>unpack</goal>
+	               </goals>
+	               <configuration>
+	                  <artifactItems>
+	                     <artifactItem>
+	                        <groupId>org.exoplatform.platform-ui</groupId>
+	                        <artifactId>platform-ui-web-skin</artifactId>
+	                        <type>war</type>
+	                        <overWrite>false</overWrite>
+	                        <outputDirectory>${project.build.directory}/${project.build.finalName}/skin</outputDirectory>
+	                        <includes>bootstrap/**,less/Core.less,less/reset.less,less/variables.less,less/mixins.less,less/Component/**</includes>
+	                     </artifactItem>
+	                  </artifactItems>
+	               </configuration>
+	            </execution>
+	         </executions>
+	      </plugin>
          <plugin>
             <groupId>org.lesscss</groupId>
             <artifactId>lesscss-maven-plugin</artifactId>
@@ -29,7 +61,7 @@
                <execution>
                   <id>bootstrap</id>
                   <configuration>
-                     <sourceDirectory>${project.basedir}/src/main/webapp/skin/bootstrap/less</sourceDirectory>
+                     <sourceDirectory>${project.build.directory}/${project.build.finalName}/skin/bootstrap/less</sourceDirectory>
                      <outputDirectory>${project.build.directory}/${project.build.finalName}/skin/bootstrap/css</outputDirectory>
                      <compress>false</compress>
                      <includes>
@@ -44,7 +76,7 @@
                <execution>
                   <id>core</id>
                   <configuration>
-                     <sourceDirectory>${project.basedir}/src/main/webapp/skin/less</sourceDirectory>
+                     <sourceDirectory>${project.build.directory}/${project.build.finalName}/skin/less</sourceDirectory>
                      <outputDirectory>${project.build.directory}/${project.build.finalName}/skin/css</outputDirectory>
                      <compress>false</compress>
                      <includes>
