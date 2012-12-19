@@ -20,6 +20,45 @@
 
    <build>
       <finalName>eXoSkin</finalName>
+        <plugins>
+        <plugin>
+           <groupId>org.lesscss</groupId>
+           <artifactId>lesscss-maven-plugin</artifactId>
+           <version>1.3.0</version>
+           <executions>
+               <execution>
+                   <id>bootstrap</id>
+                   <configuration>
+                       <sourceDirectory>${basedir}/src/main/less/bootstrap/less</sourceDirectory>
+                       <outputDirectory>${project.build.directory}/${project.build.finalName}/skin/bootstrap/css</outputDirectory>
+                       <compress>false</compress>
+                       <includes>
+                           <include>bootstrap.less</include>
+                           <include>responsive.less</include>
+                       </includes>
+                   </configuration>
+                   <goals>
+                       <goal>compile</goal>
+                   </goals>
+               </execution>
+               <execution>
+                   <id>core</id>
+                   <configuration>
+                       <outputDirectory>${project.build.directory}/${project.build.finalName}/skin/css</outputDirectory>
+                       <compress>false</compress>
+                       <includes>
+                           <include>Core.less</include>
+                           <include>wiki/wiki.less</include>
+                           <include>platform/platform.less</include>
+                       </includes>
+                   </configuration>
+                   <goals>
+                       <goal>compile</goal>
+                   </goals>
+               </execution>
+           </executions>
+       </plugin>
+       </plugins>
    </build>
 
 </project>

@@ -46,81 +46,13 @@
 	                        <type>war</type>
 	                        <overWrite>false</overWrite>
 	                        <outputDirectory>${project.build.directory}/${project.build.finalName}/skin</outputDirectory>
-	                        <includes>bootstrap/**,less/Core.less,less/reset.less,less/variables.less,less/mixins.less,less/Component/**</includes>
+	                        <includes>skin/bootstrap/**,skin/css/Core.css</includes>
 	                     </artifactItem>
 	                  </artifactItems>
 	               </configuration>
 	            </execution>
-	         </executions>
-	      </plugin>
-         <plugin>
-            <groupId>org.lesscss</groupId>
-            <artifactId>lesscss-maven-plugin</artifactId>
-            <version>1.3.0</version>
-            <executions>
-               <execution>
-                  <id>bootstrap</id>
-                  <configuration>
-                     <sourceDirectory>${project.build.directory}/${project.build.finalName}/skin/bootstrap/less</sourceDirectory>
-                     <outputDirectory>${project.build.directory}/${project.build.finalName}/skin/bootstrap/css</outputDirectory>
-                     <compress>false</compress>
-                     <includes>
-                        <include>bootstrap.less</include>
-                        <include>responsive.less</include>
-                     </includes>
-                  </configuration>
-                  <goals>
-                     <goal>compile</goal>
-                  </goals>
-               </execution>
-               <execution>
-                  <id>core</id>
-                  <configuration>
-                     <sourceDirectory>${project.build.directory}/${project.build.finalName}/skin/less</sourceDirectory>
-                     <outputDirectory>${project.build.directory}/${project.build.finalName}/skin/css</outputDirectory>
-                     <compress>false</compress>
-                     <includes>
-                        <include>Core.less</include>
-                     </includes>
-                  </configuration>
-                  <goals>
-                     <goal>compile</goal>
-                  </goals>
-               </execution>
-            </executions>
-         </plugin>
-      </plugins>
+      </executions>
+   </plugin>
+</plugins>
    </build>
-   <reporting>
-      <plugins>
-         <!-- ... -->
-         <plugin>
-            <groupId>gr.abiss.mvn.plugins</groupId>
-            <artifactId>maven-jstools-plugin</artifactId>
-            <inherited>false</inherited>
-            <configuration>
-               <!-- the default is src/main/js -->
-               <jsDir>src/main/webapp/javascript</jsDir>
-               <!-- this is actually the default -->
-               <includes>**/*.js</includes>
-               <!-- maybe you need to exclude compressed JS files -->
-               <excludes>**/*-compressed.js</excludes>
-               <!-- this is actually the default -->
-               <caseSensitive>true</caseSensitive>
-               <!-- for more configuration properties, see the goals documentation -->
-            </configuration>
-            <reportSets>
-               <reportSet>
-                  <reports>
-                     <!-- include the desired reports -->
-                     <report>jslint</report>
-                     <report>jsdoc</report>
-                  </reports>
-               </reportSet>
-            </reportSets>
-         </plugin>
-         <!-- ... -->
-      </plugins>
-   </reporting>
-
 </project>
