@@ -1,0 +1,259 @@
+/*############################## -- Begin UISideBar   -- ##############################*/
+.uiSideBar  {
+	.uiBox {
+		margin: 0px;
+	}
+	
+	#UIAllItems {
+		margin-bottom: 20px;
+	}
+	
+	.uiBox .title {
+		.sideGeneratal{
+			cursor: pointer;
+			float: right;
+			height:16px;
+			width:16px;
+			display: block;
+		}
+	}
+	
+	.uiBox .uiContentBox {
+		padding: 10px;
+		
+		.textSiderContent {
+			display: block;
+			padding-left:15px;
+			line-height: 23px;
+			font-size: 12px;
+			color: #25155d;
+			
+			&:hover {
+				color: blue;
+			}
+		}
+		
+		.arrowSidContent{
+			background: url('/ecmexplorer/skin/webui/component/explorer/sidebar/DefaultSkin/icons/ArrowSideBar.gif') no-repeat left center;
+		}
+		
+		.trueSelectIcon {
+			background: url('/ecmexplorer/skin/webui/component/explorer/sidebar/DefaultSkin/background/SelectCheck.gif') no-repeat -5px center;
+		}
+	}
+	
+	.uiSelectContent {
+		background: @grayWhiteSmoke;
+		border-top: 1px solid #c1c1c1;
+		height: 30px;
+		.border-bottom-radius(3px);
+		
+		.normalItem {
+			line-height: 26px;
+			cursor: pointer;
+			padding: 8px;
+			float: left;
+			width: 14px;
+			margin-top: -1px;
+		}
+
+		.selectedItem {
+			line-height: 26px;
+			cursor: pointer;
+			padding: 8px;
+			background: @white;
+			float: left;
+			border-left: 1px solid #c1c1c1;
+			border-right: 1px solid #c1c1c1;
+			margin: 0 2px;
+			width: 14px;
+			margin-top: -1px;
+		}
+
+
+		.MoreItem {
+			line-height: 26px;
+			cursor: pointer;
+			padding: 8px;
+			float: left;
+			width: 14px;
+			margin-top: -1px;
+		}
+		
+		.itemIcon {
+			margin: auto;
+			.size(15px, 16px);
+			display: block;
+		}
+		
+		.defaultIcon {
+			background: url('/ecmexplorer/skin/webui/component/explorer/sidebar/DefaultSkin/icons/Generatal.png') no-repeat center;
+		}
+
+		.ExplorerIcon {
+			background: url('/ecmexplorer/skin/webui/component/explorer/sidebar/DefaultSkin/icons/FileExplorer.png') no-repeat center;
+		}
+
+		.RelationIcon {
+			background: url('/ecmexplorer/skin/webui/component/explorer/sidebar/DefaultSkin/icons/Relations.gif') no-repeat center;
+		}
+
+		.ClipboardIcon {
+			background: url('/ecmexplorer/skin/webui/component/explorer/sidebar/DefaultSkin/icons/Clipboard.png') no-repeat center;
+		}
+
+		.TagExplorerIcon {
+			background: url('/ecmexplorer/skin/webui/component/explorer/sidebar/DefaultSkin/icons/Tags.png') no-repeat center;
+		}
+
+		.SavedSearchesIcon {
+			background: url('/ecmexplorer/skin/webui/component/explorer/sidebar/DefaultSkin/icons/SearchIcon.png') no-repeat center;
+		}
+
+		.actionItem {
+			background: url('/ecmexplorer/skin/webui/component/explorer/sidebar/DefaultSkin/icons/ActionItem.gif') no-repeat center;
+		}
+	}
+	
+	.selectItem {
+    overflow: auto;
+	}
+}
+
+.uiSideBar  {
+	
+	.resizeTreeExplorer {
+		height: 18px;
+		text-align: center;
+		/*cursor: row-resize;*/
+
+		.uiIconArrowDown {
+			cursor : pointer;
+		}
+	}
+	
+	.DriversButton {
+		background: url('/ecmexplorer/skin/webui/component/explorer/sidebar/DefaultSkin/icons/DriversButton.png') no-repeat left center;
+		cursor: pointer;
+		float: right;
+		height:20px;
+		margin-top:2px;
+		width:33px;
+	}
+
+	.SideGeneratal {
+		cursor: pointer;
+		float: right;
+		height:17px;
+		margin-top:4px;
+		width:17px;
+	}
+
+	.tagExplorer {
+		background: url('/ecmexplorer/skin/webui/component/explorer/sidebar/DefaultSkin/icons/Tags.png') no-repeat center;
+		.size(15px, 15px);
+		cursor: pointer;
+		margin-top:4px;
+		display: block;
+	}
+}
+
+
+.uiSideBar  {
+
+	.ListExtendedItem {
+			background: none repeat scroll 0 0 #F7F7F7;
+			border: 1px solid #B7B7B7;
+			padding: 5px;
+			position: absolute;
+	}
+
+	.ListExtendedItem .IconPopup{
+			display: block;
+			margin: 4px 0;
+			padding: 2px 6px;
+	}
+
+	.SideGeneratal {
+		background: url('/ecmexplorer/skin/webui/component/explorer/sidebar/DefaultSkin/icons/Generatal.png') no-repeat center;
+		.size(17px, 17px);
+	}
+
+	.Search {
+		background: url('/ecmexplorer/skin/webui/component/explorer/sidebar/DefaultSkin/icons/Search.png') no-repeat center;
+		.size(17px, 17px);
+	}
+
+	.advancedSearch {
+		background: url("/ecmexplorer/skin/webui/component/explorer/sidebar/DefaultSkin/icons/SearchIcon.png") no-repeat scroll center center transparent;
+		.size(17px, 17px);
+		cursor: pointer;
+		display: block;
+	}
+
+	.uiViewRelationList .TitleLabel {
+		padding: 5px 0px 5px 8px;
+		font: normal bold 11px Verdana;
+	}
+
+	.selectedNode {
+		font-weight: bold;
+	}
+}
+
+/*############################## -- UIViewRelationList   -- ##############################*/
+
+.uiSideBar .UIViewRelationList {
+	width:auto;
+	
+	.RelationFrame {
+		margin-top: 2px;
+		border: solid 1px #bdbdbd;
+	}
+	
+	.RelationFrame .TitleLabel {
+		height: 18px;
+		padding: 2px 0px 0px 15px;
+		font: normal bold 11px Verdana;
+		background: url('/eXoWCMResources/skin/images/article/EventFrameBG.gif') repeat-x;
+	}
+	
+	.RelationFrame .FrameContent {
+		padding: 10px;
+	}
+}
+
+
+/*############################## -- End UISideBar   -- ##############################*/
+
+/*############################## -- UITagExplorer   -- ##############################*/
+
+.uiSideBar .UITagExplorer {
+	text-align: left;
+	line-height: 22px;
+	
+	.TagmapTitle {
+		height: 19px; line-height: 19px;
+		margin: 0px;
+		background: url('DefaultSkin/background/TagmapTitleBG1x19.gif') repeat-x;
+		border: solid 1px #e1e1e1;
+		border-bottom: none;
+	}
+	
+	.TagLabel {
+		padding: 0px 8px;
+		line-height: 19px;
+		font-weight: bold;
+	}
+	
+	a {
+		 color: red;
+		 padding: 3px 7px 3px 0px;
+	}
+	
+	a:hover {
+		 color: yellow;
+		 padding: 3px 7px 3px 0px;
+	}
+}
+

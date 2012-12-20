@@ -1,0 +1,295 @@
+@import "../variables.less"; 
+@import "../mixins.less";
+@import "UISideBar/Style.less";
+@import "UIAddressBar/Style.less";
+
+.UIJCRExplorerPortlet {
+	padding: 25px !important;
+	background: none !important;
+	
+	.uiActionBarAlone {
+		height: 38px;
+		.tab-content {
+			.border-top-radius(3px);
+			border: 1px solid #c1c1c1;
+			
+			.nav-pills {
+				.border-top-radius(3px);
+			}
+		}
+	}
+}
+
+.uiActionBar {
+	.tab-content {
+		position: relative;
+		.border-radius(0px);
+	}
+	.UIViewBarContainer {
+		position: absolute;
+		right: 10px;
+		top: 3px;
+	}
+}
+
+.uiTabGrayInPage .tab-content .nav-pills {
+	> li.dropdown  {
+		margin-right: 200px;
+	}
+	
+	> li > a > i {
+		display: inline-block;
+		width: 24px;
+		height: 18px;
+		vertical-align: top;
+	}
+}
+
+.UIJCRExplorerPortlet .ShowDrivesButton {
+	height: 28px;
+	border: 1px solid #cfcfcf;
+	border-bottom: none;
+}
+
+/********Resize Content********/
+.uiWorkingArea {
+	width: 100%;
+	
+	.leftContainer {
+		float: left;
+		width: 240px;
+		overflow: hidden;
+	}
+	
+	.rightContainer {
+		float: left;
+	}
+	
+	.UIDocumentWorkspace {
+    margin-left: 0px;
+    overflow: auto;
+		background: @white;
+		border: 1px solid #cfcfcf;
+		border-top: none;
+		.border-bottom-radius(4px);
+		padding: 4px;
+	}
+	
+	.UIListView {
+		padding: 15px;
+		border-top: 0px;
+	}
+}
+/*===============================UIDrivesArea===================================*/
+
+.uiDrivesArea {
+	background: @white;
+	border: 1px solid #cfcfcf;
+	border-top: none;
+	.border-bottom-radius(4px);
+	padding: 4px;
+	
+	.uiDriversAreaContainer {
+		padding: 15px;
+		color: #666666;
+		overflow: hidden;
+	}
+
+	.rowDrives{
+		border-bottom: dotted 1px #cccccc;
+		padding-bottom: 15px;
+		margin-bottom: 15px;
+	}
+	
+	.rowNormal{
+		padding-bottom: 15px;
+	}
+
+	.iconArrowDrives{
+		background: url('/ecmexplorer/skin/webui/component/explorer/UIJCRExplorer/DefaultSkin/background/ArrowDrivers.gif') no-repeat left center;
+		height: 15px;
+	}
+
+	.textTitleDriver{
+		font-weight: bold;
+		text-transform: uppercase;
+		padding-left: 15px;
+		line-height: 15px;
+		margin-bottom:10px;
+	}
+
+	.drive {
+		margin: 5px;
+		float: left;
+		width:150px;
+		line-height: 19px;
+		height: 50px;
+	}
+
+	.driveLabel {
+		color: #000;
+		padding-left: 33px;
+		word-wrap: break-word;
+		display: block;
+		
+		&:hover {
+			color: blue;
+		}
+	}
+
+	.rowDrivesGroups .drive {
+		height: 70px;
+	}
+
+	.driveIcon {
+		margin: 0px 5px 3px 0px;
+		float: left;
+		.size(24px, 25px);
+		cursor: pointer;
+		display: block;
+	}
+
+	.iconDrivesDefault{
+		background: url('/ecmexplorer/skin/webui/component/explorer/UIJCRExplorer/DefaultSkin/background/DefaultDriveIcon.gif') no-repeat;
+	}
+
+	.iconDrivessystem{
+		background: url('/ecmexplorer/skin/webui/component/explorer/UIJCRExplorer/DefaultSkin/background/IconDrivesArea.gif') no-repeat left top;
+	}
+
+	.iconDrivesdms-system{
+		background: url('/ecmexplorer/skin/webui/component/explorer/UIJCRExplorer/DefaultSkin/background/IconDrivesArea.gif') no-repeat center -23px;
+	}
+
+	.iconDrivescollaboration{
+		background: url('/ecmexplorer/skin/webui/component/explorer/UIJCRExplorer/DefaultSkin/background/IconDrivesArea.gif') no-repeat center -46px;
+	}
+
+	.iconDrivesbackup{
+		background: url('/ecmexplorer/skin/webui/component/explorer/UIJCRExplorer/DefaultSkin/background/IconDrivesArea.gif') no-repeat center -69px;
+	}
+
+	.iconDrivesUse{
+		background: url('/ecmexplorer/skin/webui/component/explorer/UIJCRExplorer/DefaultSkin/background/IconDrivesArea.gif') no-repeat center -92px;
+	}
+
+	.iconDrivesPrivate{
+		background: url('/ecmexplorer/skin/webui/component/explorer/UIJCRExplorer/DefaultSkin/background/IconDrivesArea.gif') no-repeat center -115px;
+	}
+
+	.iconDrivesPublic{
+		background: url('/ecmexplorer/skin/webui/component/explorer/UIJCRExplorer/DefaultSkin/background/IconDrivesArea.gif') no-repeat center -138px;
+	}
+
+	.iconDrivesPersonal{
+		background: url('/ecmexplorer/skin/webui/component/explorer/UIJCRExplorer/DefaultSkin/background/IconDrivesArea.gif') no-repeat center bottom;
+	}
+}
+
+
+/***** ResizeBar *****/
+.uiWorkingArea .resizeBar {
+	float: left;
+	width: 40px;
+	
+	.resizeBarContent {
+		width: 22px;
+		cursor:col-resize;
+		position: relative;
+		
+		&:hover {
+			border-right: solid 1px #dedede;
+				
+			.resizeButton {
+				display: block;
+			}
+		}
+	}
+
+	.resizeButton {
+		#gradient .vertical(@white, #f1f1f1);
+		.border-radius(5px 0px 0px 5px);
+		.size(24px,16px);
+		float:right;
+		margin : auto;
+		cursor : pointer;
+		border: 1px solid #E1E1E1;
+		border-right: none;
+		display: none;
+		position: absolute;
+		top: 5px;
+		right: 0px;
+			
+			[class^="uiIcon"] {
+				width: 11px;
+				margin-top: 4px;
+			}
+	}
+
+}
+
+.uiWorkingArea .resizeBarDisplay {
+	.resizeBarContent {
+		border-right: solid 1px #E1E1E1;
+		cursor:col-resize;
+	}
+	.resizeButton {
+		display: block;
+	}
+}
+
+.uiWorkingArea .resizeNoneBorder {
+	width: 0px;
+	
+	.resizeBarContent {
+		width: 0px;
+	}
+	
+	.resizeBarContent:hover {
+		border: none;
+		cursor: default;
+	}
+	.resizeButton {
+		border: 1px solid #E1E1E1;
+		.border-radius(0px 5px 5px 0px);
+		display: block;
+		right: 8px;
+		border-left: none;
+	}
+}
+
+.UIBrowseContentPortlet .TagmapHolder .Icon {
+	float: left;
+	width: 19px; height: 16px; 
+	margin: 2px 5px 0px 5px;
+	background: url('DefaultSkin/background/TagMapIcon19x16.gif') no-repeat; 
+}
+
+/*==============Vote=============*/
+.uiVoteForm{
+	.voteFormContainer{
+		h6{
+			margin: 0px 0px 5px 10px;
+			font-weight: normal;
+		}
+		.uiRatingInfoContainer{
+			margin: 0px auto 13px;
+			width: 105px;
+		}
+		.uiIconNormalVote{
+			background: url('/ecmexplorer/skin/images/vote/uiIconVote.png') no-repeat center -2px;
+			width: 17px;
+		}
+		.uiIconOverVote{
+			background: url('/ecmexplorer/skin/images/vote/uiIconVote.png') no-repeat center -53px;
+			width: 17px;
+		}
+		.uiIconRatedVote{
+			background: url('/ecmexplorer/skin/images/vote/uiIconVote.png') no-repeat center -26px;
+			width: 17px;
+		}
+		.uiAction{
+			margin:10px -10px -9px -10px;
+		}
+	}
+}

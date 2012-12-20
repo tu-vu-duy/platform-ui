@@ -1,0 +1,79 @@
+@import "../mixins.less";
+@import "../variables.less";
+@import "FilterList/Style.less";
+@import "Activity/Style.less";
+@import "iphone/checkbox/iphone-style-checkbox.less";
+
+/*=================UISpaceMember=================*/
+
+.addInvite {
+	margin: 0px 0px 20px 0px;
+	input[type="text"] {
+		margin-top: 8px;
+	}
+}
+
+/************uiManageAllSpaces************/
+
+.uiSpaceSearch {
+	margin-bottom: 10px;
+}
+
+.spaceBox {
+	.size(165px,330px);
+	.uiGrayLightBox();
+	padding: 10px;
+	margin: 10px;
+	.avatarXLarge img {
+		border: 1px solid @borderColor;
+	}
+	.contentBox {
+		margin-left: 140px;
+		.spaceTitle {
+			max-height: 42px;
+			overflow: hidden;
+		}
+		.content {
+			height: 48px;
+			overflow: hidden;
+		}
+		.btn {
+			margin: 10px 0 0 5px;
+		}
+	}
+}
+
+.checkedBox {
+	background-image: url("/social-resources/skin/DefaultSkin/images/SpaceBox/checked.png");
+	background-position: top right;
+	background-repeat: no-repeat;
+}
+
+.uiAllPeople #LoadMoreButton {
+	width: 100%;
+}
+
+.uiInvitations #LoadMoreButton {
+  width: 100%;
+}
+
+.uiMyConnections #LoadMoreButton {
+  width: 100%;
+}
+
+.uiPendingRelation #LoadMoreButton {
+  width: 100%;
+}
+
+.uiSpaceSettingPortlet {
+	.changeAvatar {
+		text-align: center;
+		a {
+			margin-bottom: 15px;
+		}
+	}
+	.uiAction {
+		border-top: 1px solid @borderColor;
+		padding: 20px 0 10px;
+	}
+}

@@ -1,0 +1,368 @@
+
+.uiAddressBar {
+  padding: 8px;
+  margin-bottom: 15px;
+	
+	.tblAddressBar {
+		table-layout: fixed;
+		width: 100%;
+		_width: auto;
+	}
+	
+	.right {
+		width: 180px;
+		
+		.advance {
+			width: 180px;
+			position: relative;
+			
+			input {
+				width: 166px;
+				margin: 0px;
+			}
+		}
+
+		.advance .searchBtn {
+			background: url(/ecmexplorer/skin/webui/component/explorer/control/DefaultSkin/background/SearchBtn.jpg) no-repeat center;
+			.size(18px, 16px);
+			position: absolute;
+			right: 5px;
+			top: 5px;
+		}
+	}
+	
+	.uiAddressBarAction {
+
+		.dropDownButtonBox {
+			width: 18px;  
+			height: 18px;
+			position: absolute;
+			right: 12px;
+			top: 5px;
+		}
+		
+		.dropDownButton {
+			cursor: pointer;
+			margin: auto;
+			margin-top: 6px;
+		}
+
+		.inputContainer {
+			margin: 0 4px 0 0;
+		}
+
+		.inputContainer input {
+			width: 98%;
+			margin: 0px;
+		}
+	}
+	
+	.block {
+		margin: 4px;
+		
+		.iconFileExplorer {
+			width: 28px;
+		}
+	}
+	
+	.uiSelectContent {
+		border: solid 1px #c1c1c1;
+		border-top: none;
+		position: absolute;
+		height: 150px;
+		width: 100%;
+		overflow: auto;
+		background: white;
+		left: -1px;
+		display: none;
+		
+		.addressItem {
+			line-height: 18px;
+			margin: 2px;
+			cursor: pointer;
+			padding: 0px 5px;
+		}
+		
+		.selectedAddressItem {
+			line-height: 18px;
+			margin: 2px;
+			cursor: pointer;
+			color: white;
+			background-color: #316ac5;
+			padding: 0px 5px;
+		}
+	}
+}
+
+.uiAddressBar .blockMiddle,
+.uiAddressBar .blockMiddle1,
+.uiAddressBar .blockMiddle2,
+.uiAddressBar .blockMiddle3,
+.uiAddressBar .blockMiddle4 {
+	position: relative;
+}
+
+.uiAddressBar {
+
+	.viewIcon {
+		height: 25px;
+		width: 28px;
+		margin: 0px 1px 0px 0px;
+	}
+
+	.backBtn {
+		background: url('/ecmexplorer/skin/webui/component/explorer/control/DefaultSkin/background/BackBtn.png') no-repeat center center;
+		height: 24px;
+		width: 28px;
+		display: block;
+	}
+	
+	.refreshSessionButton  {
+		width: 24px;
+		height: 24px;
+		background: url('/ecmexplorer/skin/webui/component/explorer/control/DefaultSkin/background/RefreshSessionButton.png') no-repeat center;
+	}
+
+	.backAndRefreshBlock {
+		margin-left: 3px;
+		width: 55px;
+	}
+}
+
+/*---------------------*/
+
+
+
+/*********** Icon ***********/
+
+.uiAddressBar {
+	.detailMoreViewIcon {
+		width: 17px;
+	}
+	
+ .moreViewIcon {
+		background: url(/ecmexplorer/skin/webui/component/explorer/control/DefaultSkin/background/MoreViewIcon.gif) no-repeat center;
+		width: 13px;
+		height: 24px;
+		margin-left: 4px;
+	}
+
+	.listExtendedView {
+		position: absolute;
+		background: #f7f7f7;
+		border: 1px solid #b7b7b7;
+		padding: 5px;
+	}
+
+	.MoreViewIconSelected {
+		background: url(/ecmexplorer/skin/webui/component/explorer/control/DefaultSkin/background/MoreViewIconSelected.gif) no-repeat center;
+		width: 12px;
+		height: 24px;
+	}
+
+	.ExtendedView {
+		float: left;
+		position: relative;
+	}
+
+	.defaultView {
+		background: url(/ecmexplorer/skin/webui/component/explorer/control/DefaultSkin/background/DefaultView.png) no-repeat center;
+		display: block;
+	}
+
+	.HomeLabel {
+		float: left;
+		margin: 0px 0px 0px 4px;
+		color: #515151;
+	}
+
+	.defaultViewSelected {
+		background: url(/ecmexplorer/skin/webui/component/explorer/control/DefaultSkin/background/DefaultViewSelected.gif) no-repeat center;
+		display: block;
+	}
+
+	.icon-view{
+		background: url(/ecmexplorer/skin/webui/component/explorer/control/DefaultSkin/background/IconView.gif) no-repeat center center;
+		display: block;
+	}
+
+
+	.icon-view-selected{
+		background: url(/ecmexplorer/skin/webui/component/explorer/control/DefaultSkin/background/IconViewSelected.gif) no-repeat center;
+		display: block;
+	}
+
+	.admin-view{
+		background: url(/ecmexplorer/skin/webui/component/explorer/control/DefaultSkin/background/DetailView.png) no-repeat center;
+		display: block;
+	}
+
+	.anonymous-view{
+		background: url(/ecmexplorer/skin/webui/component/explorer/control/DefaultSkin/background/DefaultView.png) no-repeat center;
+		display: block;
+	}
+
+	.authoring-view{
+		background: url(/ecmexplorer/skin/webui/component/explorer/control/DefaultSkin/background/authoring-view.png) no-repeat center;
+		display: block;
+	}
+
+	.taxonomy-list{
+		background: url(/ecmexplorer/skin/webui/component/explorer/control/DefaultSkin/background/taxonomy-list.png) no-repeat center;
+		display: block;
+	}
+
+	.system-view{
+		background: url(/ecmexplorer/skin/webui/component/explorer/control/DefaultSkin/background/system-view.png) no-repeat center;
+		display: block;
+	}
+
+
+	.wcm-category-view{
+		background: url(/ecmexplorer/skin/webui/component/explorer/control/DefaultSkin/background/wcm-category-view.png) no-repeat center;
+		display: block;
+	}
+
+	.wcm-view{
+		background: url(/ecmexplorer/skin/webui/component/explorer/control/DefaultSkin/background/wcm-view.png) no-repeat center;
+		display: block;
+	}
+
+	.taxonomy-icons{
+		background: url(/ecmexplorer/skin/webui/component/explorer/control/DefaultSkin/background/taxonomy-icons.png) no-repeat center;
+		display: block;
+	}
+
+	.anonymous-view-selected{
+		background: url(/ecmexplorer/skin/webui/component/explorer/control/DefaultSkin/background/DefaultViewSelected.gif) no-repeat center;
+		display: block;
+	}
+
+	.authoring-view-selected{
+		background: url(/ecmexplorer/skin/webui/component/explorer/control/DefaultSkin/background/authoring-view-selected.png) no-repeat center;
+		display: block;
+	}
+
+	.taxonomy-list-selected{
+		background: url(/ecmexplorer/skin/webui/component/explorer/control/DefaultSkin/background/taxonomy-list-selected.png) no-repeat center;
+		display: block;
+	}
+
+	.system-view-selected{
+		background: url(/ecmexplorer/skin/webui/component/explorer/control/DefaultSkin/background/system-view-selected.png) no-repeat center;
+		display: block;
+	}
+
+
+	.wcm-category-view-selected{
+		background: url(/ecmexplorer/skin/webui/component/explorer/control/DefaultSkin/background/wcm-category-view-selected.png) no-repeat center;
+		display: block;
+	}
+
+	.wcm-view-selected{
+		background: url(/ecmexplorer/skin/webui/component/explorer/control/DefaultSkin/background/wcm-view-selected.png) no-repeat center;
+		display: block;
+	}
+
+	.taxonomy-icons-selected{
+		background: url(/ecmexplorer/skin/webui/component/explorer/control/DefaultSkin/background/taxonomy-icons-selected.png) no-repeat center;
+		display: block;
+	}
+
+	.admin-view-selected{
+		background: url(/ecmexplorer/skin/webui/component/explorer/control/DefaultSkin/background/DetailViewSelected.png) no-repeat center;
+		display: block;
+	}
+
+	.simple-view{
+		background: url(/ecmexplorer/skin/webui/component/explorer/control/DefaultSkin/background/ThumbnailView.gif) no-repeat center; 
+		display: block;
+	}
+
+	.simple-view-selected{
+		background: url(/ecmexplorer/skin/webui/component/explorer/control/DefaultSkin/background/ThumbnailViewSelected.gif) no-repeat center;
+		display: block;
+	}
+
+	.cover-flow{
+		background: url(/ecmexplorer/skin/webui/component/explorer/control/DefaultSkin/background/CoverflowView.gif) no-repeat center center;
+		display: block;
+	}
+
+	.cover-flow-selected{
+		background: url(/ecmexplorer/skin/webui/component/explorer/control/DefaultSkin/background/CoverflowViewSelected.gif) no-repeat center;
+		display: block;
+	}
+
+	.slide-show {
+		background: url(/ecmexplorer/skin/webui/component/explorer/control/DefaultSkin/background/SlideShow.png) no-repeat center;
+		display: block;
+	}
+	.slide-show-selected {
+		background: url(/ecmexplorer/skin/webui/component/explorer/control/DefaultSkin/background/SlideShowSelected.png) no-repeat center;
+		display: block;
+	}
+	.timeline-view {
+		background: url(/ecmexplorer/skin/webui/component/explorer/control/DefaultSkin/background/TimeLine.png) no-repeat center;
+		display: block;
+	}
+	.timeline-view-selected{
+		background: url(/ecmexplorer/skin/webui/component/explorer/control/DefaultSkin/background/TimeLineSelected.png) no-repeat center;
+		display: block;
+	}
+}
+
+/*********icon2**********/
+
+.uiAddressBar {
+	.a_timeline-view {
+		background: url('/ecmexplorer/skin/webui/component/explorer/control/DefaultSkin/background/TimeLine.png') no-repeat center;
+		display: block;
+	}
+	.a_timeline-view-selected{ 
+		background: url('/ecmexplorer/skin/webui/component/explorer/control/DefaultSkin/background/TimeLineSelected.png') no-repeat center;
+		display: block;
+	}
+
+	.b_list-view {
+		background: url('/ecmexplorer/skin/webui/component/explorer/control/DefaultSkin/background/DefaultView.png') no-repeat center;
+		display: block;
+	}
+
+	.b_list-view-selected {
+		background: url('/ecmexplorer/skin/webui/component/explorer/control/DefaultSkin/background/DefaultViewSelected.gif') no-repeat center;
+		display: block;
+	}
+
+	.c_icon-view{
+		background: url('/ecmexplorer/skin/webui/component/explorer/control/DefaultSkin/background/IconView.gif') no-repeat center center;
+		display: block;
+	}
+
+	.c_icon-view-selected{
+		background: url('/ecmexplorer/skin/webui/component/explorer/control/DefaultSkin/background/IconViewSelected.gif') no-repeat center;
+		display: block;
+	}
+
+	.d_cover-flow{
+		background: url('/ecmexplorer/skin/webui/component/explorer/control/DefaultSkin/background/CoverflowView.gif') no-repeat center center;
+		display: block;
+	}
+
+	.d_cover-flow-selected{
+		background: url('/ecmexplorer/skin/webui/component/explorer/control/DefaultSkin/background/CoverflowViewSelected.gif') no-repeat center;
+		display: block;
+	}
+
+	.e_admin-view{
+		background: url('/ecmexplorer/skin/webui/component/explorer/control/DefaultSkin/background/DetailView.png') no-repeat center;
+		width: 23px;
+		height: 24px;
+		display: block;
+	}
+
+	.e_admin-view-selected{
+		background: url('/ecmexplorer/skin/webui/component/explorer/control/DefaultSkin/background/DetailViewSelected.png') no-repeat center;
+		display: block;
+	}
+}

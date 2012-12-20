@@ -49,6 +49,17 @@
                        <includes>
                            <include>Core.less</include>
                            <include>wiki/wiki.less</include>
+                           <include>ecms/ecms-administration.less</include>
+                           <include>ecms/ecms-explorer.less</include>
+                           <include>ecms/ecms-presentation-categorynavigationportlet.less</include>
+                           <include>ecms/ecms-presentation-contentlistviewerportlet.less</include>
+                           <include>ecms/ecms-presentation-singlecontentviewer.less</include>
+                           <include>ecms/ecms-resources.less</include>
+                           <include>ecms/ecms-search.less</include>
+                           <include>social/social.less</include>
+                           <include>social/portlet/**</include>
+                           <include>forum/forum.less</include>
+                           <include>calendar/calendar.less</include>
                            <include>platform/platform.less</include>
                        </includes>
                    </configuration>

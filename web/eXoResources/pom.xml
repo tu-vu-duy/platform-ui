@@ -28,31 +28,5 @@
    
    <build>
       <finalName>eXoResources</finalName>
-      <plugins>
-	      <plugin>
-	         <groupId>org.apache.maven.plugins</groupId>
-	         <artifactId>maven-dependency-plugin</artifactId>
-	         <executions>         
-	            <execution>
-	               <id>unpack</id>
-	               <goals>
-	                  <goal>unpack</goal>
-	               </goals>
-	               <configuration>
-	                  <artifactItems>
-	                     <artifactItem>
-	                        <groupId>org.exoplatform.platform-ui</groupId>
-	                        <artifactId>platform-ui-web-skin</artifactId>
-	                        <type>war</type>
-	                        <overWrite>false</overWrite>
-	                        <outputDirectory>${project.build.directory}/${project.build.finalName}/skin</outputDirectory>
-	                        <includes>skin/bootstrap/**,skin/css/Core.css</includes>
-	                     </artifactItem>
-	                  </artifactItems>
-	               </configuration>
-	            </execution>
-      </executions>
-   </plugin>
-</plugins>
    </build>
 </project>
