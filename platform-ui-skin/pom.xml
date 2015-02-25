@@ -78,6 +78,7 @@
                                 <include>platform/portlets/platformNavigation/UISearchPlatformToolbarPortlet/Style.less</include>
                                 <include>platform/portlets/platformNavigation/UISpaceNavigationPortlet/Style.less</include>
                                 <include>platform/portlets/platformNavigation/UIUserNavigationPortlet/Style.less</include>
+                                <include>platform/portlets/platformNavigation/UINotificationPopoverToolbarPortlet/Style.less</include>
                                 <include>platform/portlets/notification/notificationsAdmin.less</include>
                                 <include>platform/portlets/homepage/calendar.less</include>
                                 <include>platform/portlets/homepage/gettingstarted.less</include>
